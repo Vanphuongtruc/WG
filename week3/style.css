@@ -1,0 +1,38 @@
+p{
+    color: green;
+    background-color: khaki;
+    font-size: xx-large;
+    text-align: center;
+    width: 80%;
+    border: thick red solid;
+    padding: 2px 10px;
+
+
+}
+h1, h2, h3{
+    font-family: sans-serif;
+}
+#p3 {
+    color: lawngreen;
+}
+/* styling for class style*/
+.strike{
+    text-decoration: line-through;
+    color: lightskyblue;
+}
+
+ol {
+    color: green;
+    font-weight: bold;
+}
+div ol li{
+    color: hotpink;
+}
+
+ol > li{
+    color: indigo;
+}
+
+ol div ~ h4{
+    color: orange;
+}
