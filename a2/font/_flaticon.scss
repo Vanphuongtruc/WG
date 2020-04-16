@@ -1,6 +1,6 @@
     /*
     Flaticon icon font: Flaticon
-    Creation date: 08/04/2020 13:46
+    Creation date: 16/04/2020 07:43
     */
 
     @font-face {
@@ -43,6 +43,7 @@
 .flaticon-previous:before { content: "\f103"; }
 .flaticon-next:before { content: "\f104"; }
 .flaticon-popcorn:before { content: "\f105"; }
+.flaticon-up-arrow:before { content: "\f106"; }
     
     $font-Flaticon-cinema: "\f100";
     $font-Flaticon-armchair: "\f101";
@@ -50,3 +51,4 @@
     $font-Flaticon-previous: "\f103";
     $font-Flaticon-next: "\f104";
     $font-Flaticon-popcorn: "\f105";
+    $font-Flaticon-up-arrow: "\f106";
