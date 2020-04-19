@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 .navbar ul li a{
     font-size: 20px;
     text-align: end;
@@ -6,6 +9,21 @@
     margin-left: 1cm;
     margin-right: 1cm;
     
+}
+::-webkit-scrollbar{
+    width: 25px;
+}
+::-webkit-scrollbar-track{
+    border: 5px solid #2b4b80 ;
+    box-shadow: inset 0 0 2.5px 2px rgba(0,0,0,0.2);
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(
+        45deg,
+        #ff5c97,
+        #2b4b80);
+    border-radius: 3px;
 }
 .navbar ul li a:hover{
         color: #ff5c97;
@@ -45,7 +63,7 @@ body{
 }
 .bg1{
     background-image: url(img/what_do.png);
-    background-repeat: no-repeat;
+  
 }
 .bgplus{
     background-image: url(img/plus4.png);
@@ -58,13 +76,51 @@ body{
 }
 .bg2{
     background-image: url(img/we-create_bg.png);
+    
+   
 }
+.pink-border{
+    border-color: blue;
+
+}
+.parallex1{
+    height: 400px;
+   
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   background-image: url(img/cinema.png);
+
+}
+.parallex2{
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   background-image: url(img/cinema3.png);
+
+}
+.parallex4{
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   background-image: url(img/cinema4.png);
+
+}
+
 .bg3{
     background-image: url(img/what_do_right.png.png);
+   
+    
 }
 .bg4{
     background-image: url(img/we_create_right.png);
-    background-repeat: no-repeat;
+   
+    
 }
 
 .icon {
