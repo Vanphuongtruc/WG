@@ -1,0 +1,183 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #FFCE00;
+	
+}
+
+h1 {
+	margin: 30px 0px;
+	color: #313131;
+	font-size: 42px;
+	font-weight: 900;
+	text-align: center;
+}
+
+h1 span {
+	font-weight: 300;
+}
+
+.date-picker {
+	position: relative;
+	width: 100%;
+	max-width: 320px;
+	
+	background-color: #FFF;
+	
+	box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+
+	cursor: pointer;
+	user-select: none;
+	border-radius: 5px;
+}
+
+.date-picker:hover {
+	background-color: #F3F3F3;
+}
+
+.date-picker .selected-date {
+	width: 100%;
+	height: 100%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	color: #313131;
+	
+}
+
+.date-picker .dates {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+
+	background-color: #FFF;
+}
+
+.date-picker .dates.active {
+	display: block;
+}
+
+.date-picker .dates .month {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 2px solid #EEE;
+}
+
+.date-picker .dates .month .arrows {
+	width: 35px;
+	height: 35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #313131;
+	font-size: 20px;
+}
+
+.date-picker .dates .month .arrows:hover {
+	background-color: #F3F3F3;
+}
+
+.date-picker .dates .month .arrows:active {
+	background-color: #ff5c97;
+}
+
+.date-picker .dates .days {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	height: 200px;
+}
+.date-picker .dates .days .day { 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #313131;
+}
+.date-picker .dates .days .day.selected {
+	background-color: #ff5c97;
+}
+
+
+
+
+
+#form1.form {
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+	margin: 0;
+	margin-top: 2cm;
+
+}
+.form-control {
+    margin-bottom: 10px;
+    
+    position: relative;
+}
+.form-control label{
+    display: inline-block;
+
+}
+
+.form-control input{
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    
+}
+
+.form-control.success input{
+    border-color: #2ecc71;
+}
+.form-control.error input{
+    border-color: red;
+}
+.form-control.success i.fa-check-circle {
+    color:#2ecc71 ;
+    visibility: visible;
+}
+.form-control.error i.fa-exclamation-circle {
+    visibility: visible;
+    color: red;
+}
+.form-control i{
+    position: absolute;
+   top: 15px;
+   margin-left: 5px;
+   visibility: hidden;
+   
+}
+.form-control small{
+    position: absolute;
+    margin-left: 25px;
+    margin-top: 10px;
+    visibility: hidden;
+}
+.form-control.error small{
+    color: red;
+    visibility: visible;
+}
+
+.form button {
+   color: #FFF;
+    margin: 15px;
+   margin-left: 430px;
+   background-color: #ff5c97;
+   padding: .5rem 2rem;
+   border: 2px;
+   color: #f0f0f0;
+}
+
+#totalPrice.border{
+	border-radius: 5px;
+	overflow: hidden;
+	border:1.5px dashed black!important;
+}
