@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>EllisDee</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font/flaticon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
+</head>
+<body onload="todayDate()" >
+    <div class="nowshowing-area" id="now-showing-section">
+        <div class="container bg3 justify-content-between" style="background-position: 5cm;">
+          <div class="row d-flex justify-content-center bg1">
+            <div class="col-lg-10 "> 
+                <div class="section-tittle ">
+                    <h1>Now Showing</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-start">
+          <div class="col-lg-6">
+            <table class="border border-dark">
+              <tr>
+                  <td rowspan="2">
+                      <div id="table-card "class="card">
+                          <a href = #synopsis-area-section onclick="myFunction1()"><img src="img/end game1.jpg" alt="Avatar" style="height: 8cm;" onclick="myFunction1()" > More details</a>
+                      </div>
+                  </td>
+                  <td class="border-top border-right border-bottom border-dark " ><h4 id="movieName1">Avengers: Eng Game-T18</h4>
+                      <br>
+                      
+                      <ul><button type="button" class="btn btn-primary">Fri - 9:00</button></ul>
+                      <ul><button type="button" class="btn btn-primary">Fri - 13:00</button></ul>
+                      <ul><button type="button" class="btn btn-primary">Fri - 14:30</button></ul>
+                      <ul><button type="button" class="btn btn-primary">Fri - 18:00</button></ul>
+                     
+                  </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-lg-6">
+            <table class="border border-dark">
+                <tr>
+                    <td rowspan="2">
+                        <div id="table-card "class="card">
+                          <a href = #synopsis-area-section  onclick="myFunction2()"><img src="img/dumbo.jpg" alt="Avatar" style="height: 8cm;" onclick="myFunction2()"> More details</a>
+                        </div>
+                    </td>
+                    <td class="border-top border-right border-bottom border-dark " ><h4 id='movieName2'>Dumbo-T12</h4>
+                        <br>
+                        <br>
+                        <ul><button type="button" class="btn btn-primary">Fri - 14:45</button></ul>
+                        <ul><button type="button" class="btn btn-primary">Fri - 18:30</button></ul>
+                        <ul><button type="button" class="btn btn-primary">Fri - 19:00</button></ul>
+                        <ul><button type="button" class="btn btn-primary">Fri - 20:00</button></ul>
+                    </td>
+                </tr>
+            </table>
+          </div>
+        </div>
+        <br>
+        <div class="row d-flex justify-content-start">
+          <div class="col-lg-6">
+            <table class="border border-dark">
+              <tr>
+                  <td rowspan="2">
+                      <div id="table-card "class="card">
+                        <a href = #synopsis-area-section onclick="myFunction3()"><img src="img/frozenII.png" alt="Avatar" style="height: 8cm;" onclick="myFunction3()"> More details</a>
+                      </div>
+                  </td>
+                  <td class="border-top border-right border-bottom border-dark " ><h4 id="movieName3">Frozen II-T9</h4>
+                      <br>
+                      <br>
+                      <ul><button type="button" class="btn btn-primary">Fri - 15:30</button></ul>
+                      <ul><button type="button" class="btn btn-primary">Fri - 17:00</button></ul>
+                      <ul><button type="button" class="btn btn-primary">Fri - 18:00</button></ul>
+                      <ul><button type="button" class="btn btn-primary">Fri - 21:00</button></ul>
+                  </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-lg-6">
+            <table class="border border-dark">
+                <tr>
+                    <td rowspan="2">
+                        <div id="table-card "class="card">
+                          <a href = #synopsis-area-section onclick="myFunction4()"><img src="img/birdsofprey.jpg" alt="Avatar" style="height: 8cm;" onclick="myFunction4()"> More details</a>
+                        </div>
+                    </td>
+                    <td class="border-top border-right border-bottom border-dark " ><h4 id="movieName4">Birds Of Grey-T16</h4>
+                        <br>
+                        <br>
+                        <ul><button type="button" class="btn btn-primary">Fri - 12:45</button></ul>
+                        <ul><button type="button" class="btn btn-primary">Fri - 14:40</button></ul>
+                        <ul><button type="button" class="btn btn-primary">Fri - 18:00</button></ul>
+                        <ul><button type="button" class="btn btn-primary">Fri - 18:30</button></ul>
+                    </td>
+                </tr>
+            </table>
+          </div>
+        </div>
+        <br>  
+        <div class="row d-flex justify-content-start">
+          <div class="col-lg-6">
+            <table class="border border-dark">
+              <tr>
+                  <td rowspan="2">
+                      <div id="table-card "class="card">
+                          <img src="img/joker.jpg" alt="Avatar" style="height: 8cm;">
+                      </div>
+                  </td>
+                  <td class="border-top border-right border-bottom border-dark " ><h4>Joker-R</h4>
+                      <br>
+                      <br>
+                      <ul><button type="button" class="btn btn-primary">Fri - 11:00</button></ul>
+                      <ul><button type="button" class="btn btn-primary">Fri - 14:00</button></ul>
+                      <ul><button type="button" class="btn btn-primary">Fri - 19:00</button></ul>
+                      <ul><button type="button" class="btn btn-primary">Fri - 20:00</button></ul>
+                  </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-lg-6">
+            <table class="border border-dark">
+                <tr>
+                    <td rowspan="2">
+                        <div id="table-card "class="card">
+                            <img src="img/parasite.jpg" alt="Avatar" style="height: 8cm;">
+                        </div>
+                    </td>
+                    <td class="border-top border-right border-bottom border-dark " ><h4>Parasite-T18</h4>
+                        <br>
+                        <br>
+                        <ul><button type="button" class="btn btn-primary">Fri - 13:45</button></ul>
+                        <ul><button type="button" class="btn btn-primary">Fri - 19:00</button></ul>
+                        <ul><button type="button" class="btn btn-primary">Fri - 19:45</button></ul>
+                        <ul><button type="button" class="btn btn-primary">Fri - 20:00</button></ul>
+                    
+                    </td>
+                </tr>
+            </table>
+          </div>
+        </div> 
+        <br> 
+        <div class="row d-flex justify-content-start">
+          <div class="col-lg-6">
+            <table class="border border-dark">
+              <tr>
+                  <td rowspan="2">
+                      <div id="table-card " class="card">
+                          <img src="img/invisibleman.jpg" alt="Avatar" style="height: 8cm;">
+                      </div>
+                  </td>
+                  <td class="border-top border-right border-bottom border-dark " ><h4>The Invisible Man-T18</h4>
+                      <br>
+                      <br>
+                      <ul><button type="button" class="btn btn-primary">Fri - 10:30</button></ul>
+                      <ul><button type="button" class="btn btn-primary">Fri - 15:00</button></ul>
+                      <ul><button type="button" class="btn btn-primary">Fri - 16:00</button></ul>
+                      <ul><button type="button" class="btn btn-primary">Fri - 19:00</button></ul>
+                  </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-lg-6">
+            <table class="border border-dark">
+                <tr>
+                    <td rowspan="2">
+                        <div id="table"class="card">
+                            <img src="img/weatheringwithyou.jpg" alt="Avatar" style="height: 8cm;">
+                        </div>
+                    </td>
+                    <td class="border-top border-right border-bottom border-dark " ><h4>Weathering With You-T15</h4>
+                        <br>
+                        
+                        <ul><button type="button" class="btn btn-primary">Fri - 10:00</button></ul>
+                        <ul><button type="button" class="btn btn-primary">Fri - 13:30</button></ul>
+                        <ul><button type="button" class="btn btn-primary">Fri - 15:30</button></ul>
+                        <ul><button type="button" class="btn btn-primary">Fri - 17:00</button></ul>
+                        
+                    </td>
+                </tr>
+            </table>
+          </div>
+        </div>        
+                      
+              
+      </div>
+      </div>
+      </div>
+     <div class="container">
+       <div class="parallex2"></div>
+     </div>
+
+         <!--synopsis area section-->
+  <div class="container" >
+    <div class="parallex4"></div>
+  </div>
+    <div id="synopsis-area-section"class="synopsis-area">
+      <div class="container bg3">
+        <div class="row d-flex  justify-content-center  bg2">
+          <div class="col-lg-10 ">
+            <div class="section-tittle  bgplus">
+              <h1>Synopsis Area</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+          <div class="col-md-4 offset-md-1">
+            <h3 id='movie0'>Joker</h3>
+            
+          </div>
+          <div class="col-md-5 offset-md-1">
+            <p style="display: inline;" >Rating:    </p> 
+            <h3 id="rating" style="display: inline;"></h3>
+          </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-4  ">
+          <h4>Plot Description <div class="icon bg2 "> <span style="font-weight: 400;"class="flaticon-popcorn"></span></div></h4>
+          <p id="description">
+            "Joker" centers around the iconic arch nemesis and is an original, standalone fictional story not seen before on the big screen. Phillips' exploration of Arthur Fleck, who is indelibly portrayed by Joaquin Phoenix, is of a man struggling to find his way in Gotham's fracturedsociety. A clown-for-hire by day, he aspires to be a stand-up comic at night...but finds the joke always seems to be on him. Caught in a cyclical existence between apathy and cruelty, Arthur makes one bad decision that brings about a chain reaction of escalating events in this gritty character study.
+          </p>
+        </div>
+        <div class="col-md-4 offset-md-1 bg4 align-items-start">
+          <iframe style="margin-top: 1cm" width="500" height="275" src="https://www.youtube.com/embed/zAGVQLHvwOY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="trailer" embedded=true></iframe>  
+          <p id='comment'><span style="font-style: italic;">*strong bloody violence, disturbing behavior, language and brief sexual images)</p>
+            </span>
+        </div>
+      <div class="row">
+        <div class="col-md-5">
+          <h3 class="text-start" style="display: inline;">Make a booking on:
+            <form name="date" class="text-start"> 
+              <select id="mySelect" >
+              <option id="1" >Monday</option>
+              <option >Tuesday</option>
+              <option>Wednesday</option>
+              <option>Thursday</option>
+              <option>Friday</option>       
+              <option>Saturday</option>
+              <option>Sunday</option>
+             </select>
+            </form>
+            </h3>
+        </div>
+        <div class="col-md-7 align-items-end">
+          <div class="btn-group btn-group-lg" role="group" aria-label="Basic example">
+            <a  onclick="discountedPrice1()" class="btn btn-secondary border rounded" target="_blank" id="demo1">12pm</a>
+            <button type="button" class="btn btn-secondary border rounded" onclick="discountedPrice2()" id="demo2" >14:00</button>
+            <button type="button" class="btn btn-secondary border rounded" onclick="discountedPrice3()" id="demo3">19:30</button>
+            <button type="button" class="btn btn-secondary border rounded" onclick="discountedPrice4()" id="demo4">20:00</button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end synopsis area section-->
+
+
+
+    <h1>TES<span>TTI</span>NG<span id="today"></span></h1>
+        <div class="row">
+            <div class="col-2 offset-1">
+                <h3>Standard</h3>
+                <form class="form-horizontal" role="form" enctype="multipart/form-data" id="form2" name="inputForm" novalidate>
+                    <div class="well">
+                    <div class="form-group">
+                        <label class="col-xs-3 control-label"><strong>Adult</strong>&nbsp;</label>
+                        <div class="col-xs-2">
+                            <select class="form-control" id="seats-STA" onchange="totalPrice()">
+                                <option onchange="totalPrice()"value=''>--Please Select--</option>
+                                <option onchange="totalPrice()"value="1">1</option>
+                                <option onchange="totalPrice()"value="2">2</option>
+                                <option onchange="totalPrice()"value="3">3</option>
+                                <option onchange="totalPrice()"value="4">4</option>
+                                <option onchange="totalPrice()"value="5">5</option>
+                                <option onchange="totalPrice()"value="6">6</option>
+                                <option onchange="totalPrice()"value="7">7</option>
+                                <option onchange="totalPrice()"value="8">8</option>
+                                <option onchange="totalPrice()"value="9">9</option>
+                                <option onchange="totalPrice()"value="10">10</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-xs-3 control-label"><strong>Concession</strong>&nbsp;</label>
+                        <div class="col-xs-2">
+                            <select class="form-control" id="seats-STP" onchange="totalPrice()">
+                                <option onchange="totalPrice()" value=''>--Please Select--</option>
+                                <option onchange="totalPrice()"value="1">1</option>
+                                <option onchange="totalPrice()"value="2">2</option>
+                                <option onchange="totalPrice()"value="3">3</option>
+                                <option onchange="totalPrice()" value="4">4</option>
+                                <option onchange="totalPrice()" value="5">5</option>
+                                <option onchange="totalPrice()" value="6">6</option>
+                                <option onchange="totalPrice()" value="7">7</option>
+                                <option onchange="totalPrice()" value="8">8</option>
+                                <option onchange="totalPrice()" value="9">9</option>
+                                <option onchange="totalPrice()" value="10">10</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-xs-3 control-label"><strong>Child</strong>&nbsp;</label>
+                        <div class="col-xs-2">
+                            <select class="form-control" id="seats-STC" onchange="totalPrice()">
+                                <option onchange="totalPrice()"value=''>--Please Select--</option>
+                                <option onchange="totalPrice()"value="1">1</option>
+                                <option onchange="totalPrice()"value="2">2</option>
+                                <option onchange="totalPrice()"value="3">3</option>
+                                <option onchange="totalPrice()"value="4">4</option>
+                                <option onchange="totalPrice()"value="5">5</option>
+                                <option onchange="totalPrice()"value="6">6</option>
+                                <option onchange="totalPrice()"value="7">7</option>
+                                <option onchange="totalPrice()"value="8">8</option>
+                                <option onchange="totalPrice()"value="9">9</option>
+                                <option onchange="totalPrice()"value="10">10</option>
+                            </select>
+                        </div>
+                    </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-2">
+                <h3>First class</h3>
+                <form class="form-horizontal" role="form" enctype="multipart/form-data" id="form3" name="inputForm" novalidate>
+                    <div class="well">
+                        <div class="form-group">
+                            <label class="col-xs-3 control-label"><strong>Adult</strong>&nbsp;</label>
+                                <div class="col-xs-2">
+                                    <select class="form-control" id="seats-FCA" onchange="totalPrice()">
+                                        <option onchange="totalPrice()"value=''>--Please Select--</option>
+                                        <option onchange="totalPrice()"value="1">1</option>
+                                        <option onchange="totalPrice()"value="2">2</option>
+                                        <option onchange="totalPrice()"value="3">3</option>
+                                        <option onchange="totalPrice()"value="4">4</option>
+                                        <option onchange="totalPrice()"value="5">5</option>
+                                        <option onchange="totalPrice()"value="6">6</option>
+                                        <option onchange="totalPrice()"value="7">7</option>
+                                        <option onchange="totalPrice()"value="8">8</option>
+                                        <option onchange="totalPrice()"value="9">9</option>
+                                        <option onchange="totalPrice()"value="10">10</option>
+                                    </select>
+                                </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-xs-3 control-label"><strong>Concession</strong>&nbsp;</label>
+                                <div class="col-xs-2">
+                                    <select class="form-control" id="seats-FCP" onchange="totalPrice()">
+                                        <option onchange="totalPrice()"value=''>--Please Select--</option>
+                                        <option onchange="totalPrice()"value="1">1</option>
+                                        <option onchange="totalPrice()"value="2">2</option>
+                                        <option onchange="totalPrice()"value="3">3</option>
+                                        <option onchange="totalPrice()"value="4">4</option>
+                                        <option onchange="totalPrice()"value="5">5</option>
+                                        <option onchange="totalPrice()"value="6">6</option>
+                                        <option onchange="totalPrice()"value="7">7</option>
+                                        <option onchange="totalPrice()"value="8">8</option>
+                                        <option onchange="totalPrice()"value="9">9</option>
+                                        <option onchange="totalPrice()"value="10">10</option>
+                                    </select>
+                                </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-xs-3 control-label"><strong>Child</strong>&nbsp;</label>
+                                <div class="col-xs-2">
+                                    <select class="form-control" id="seats-FCC" onchange="totalPrice()">
+                                        <option onchange="totalPrice()"value=''>--Please Select--</option>
+                                        <option onchange="totalPrice()"value="1">1</option>
+                                        <option onchange="totalPrice()"value="2">2</option>
+                                        <option onchange="totalPrice()"value="3">3</option>
+                                        <option onchange="totalPrice()"value="4">4</option>
+                                        <option onchange="totalPrice()"value="5">5</option>
+                                        <option onchange="totalPrice()"value="6">6</option>
+                                        <option onchange="totalPrice()"value="7">7</option>
+                                        <option onchange="totalPrice()"value="8">8</option>
+                                        <option onchange="totalPrice()"value="9">9</option>
+                                        <option onchange="totalPrice()"value="10">10</option>
+                                    </select>
+                                </div>
+                                <br>
+                               
+                            <div class="form-group">
+                            <label for="username"><strong>Price</strong></label>
+                            <h3 class="border"id="totalPrice">$0.00</h3>
+                        </div></div>
+                    </div>
+                </form>
+            </div>
+            
+       
+           <div class="col-lg-5 offset-1 align-item-start justify-content-start">
+                <form class="form" action="" method="POST" id="form1">
+        
+                    <div class="form-control">
+                        <label for="username">Name</label>
+                        <input type="text" placeholder="Enter your name" id="username" />
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+                    <div class="form-control">
+                        <label for="username">Email</label>
+                        <input type="email" placeholder="Ex: abc@def.com" id="email" />
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                     </div>
+                    <div class="form-control">
+                        <label for="username">Mobile</label>
+                        <input type="tel" placeholder="Enter mobile number" id="mobile"/>
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+                    <div class="form-control">
+                        <label for="username">Credit card</label>
+                        <input type="text" placeholder="Enter credit card" id="creditcard"/>
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+                    <div class="date-picker">
+                        <label for="">Expiry</label>
+                        <div class=" selected-date"></div>
+
+                        <div class="dates">
+                            <div class="month">
+                                <div class="arrows prev-mth">&lt;</div>
+                                <div class="mth"></div>
+                                <div class="arrows next-mth">&gt;</div>
+                            </div>
+
+                            <div class="days"></div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <button type="submit" class="btn btn-lg">order</button>  
+                </form>
+            </div>
+            
+        </div>
+    </div>
+
+
+
+    
+<script src="form/test.js"></script>   
+</body>
+</html>
