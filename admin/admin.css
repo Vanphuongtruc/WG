@@ -1,0 +1,134 @@
+.admin-wrapper {
+    display: flex;
+    position: relative;
+    height: 550px;
+    overflow: hidden;
+
+
+
+
+
+}
+
+.admin-wrapper .left-side-bar {
+
+    border: black solid;
+    width: 15%;
+    background-color: rgb(94, 155, 32);
+    min-height: 100px;
+
+
+
+}
+
+.admin-wrapper .admin-content {
+    background-color: rgba(241, 241, 241, 0.856);
+    border: black solid;
+    width: 85%;
+
+    min-height: 200px;
+
+
+}
+
+.button-container{
+
+    list-style-type: none;
+    position: relative;
+
+}
+.button-container li{
+    margin-bottom: 10px;
+}
+.button-container li a button{
+    width: 100%;
+    background-color: chartreuse;
+}
+.button-container li a button:hover{
+    transition-duration: 500ms;
+    background-color: rgb(68, 114, 22);
+}
+
+.dropdown-content {
+    
+    display: none;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+.dropdown-content a {
+    margin-left: 43px;
+    text-align: center;
+    background-color: #f1f1f1;
+    width: 80%;
+    position: relative;
+    color: black;
+    text-decoration: none;
+    display: block;
+
+    
+
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {    transition-duration: 500ms;display:inline;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.admin-content .title{
+    position: relative;
+    height: 10%;
+    margin: 10px 0px 10px 0px;
+
+
+}
+.admin-content .title h2{
+    color:red;
+    text-align: center;
+
+}
+.admin-content .content{
+
+    position: relative;
+    height: 90%;
+    width: 100%;
+    
+    
+}
+
+.admin-content .content .user-data{
+    text-align: center;
+}
+.admin-content .content .data-modifier{
+    background-color: white;
+    width: 500px;
+    height: 70%;
+    position: relative;
+    left: calc(50% - 250px);
+    border-radius:25px;
+    border: green 2px solid;
+}
+.admin-content .content .data-modifier table{
+    border-collapse: collapse;
+    width: 90%;
+    position: relative;
+    left: 26px;
+
+
+}
+table{
+    width: 100%;
+}
+th,td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid  #d3d3d3;;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+td a:hover{
+    color: red;
+    
+
+}
